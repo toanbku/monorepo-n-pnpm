@@ -8,7 +8,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: "./src/index.ts",
-      formats: ["es"],
+      formats: ["cjs", "es"],
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
